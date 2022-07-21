@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 1: Chương trình xuất 3 số theo thứ tự tăng dần
+      </h2>
+      <div class="title mb-3">
+        <div>
+          <h3 class="text-center">Input</h3>
+          <ul>
+            <li>3 số nguyên</li>
+          </ul>
+        </div>
+        <div class="process">
+          <h3 class="text-center">Process</h3>
+          <ul>
+            <li>
+              Tạo 3 biến num1 num2 num3 lưu lại 3 số mà người dùng nhập vào
+            </li>
+            <li>
+              Tạo biến output để lưu chuỗi hiển thị kết quả dãy số tăng dần
+            </li>
+            <li>Xét biểu thức điều kiện if esle để tìm số nhỏ nhất, nhì, ba</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-center">Output</h3>
+          <ul>
+            <li>3 số nguyên theo thứ tự tăng dần</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center">
+            Hiển thị dãy số tăng dần
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <p>Số thứ nhất</p>
+              <input class="form-control" id="num1" />
+            </div>
+            <div class="form-group">
+              <p>Số thứ 2</p>
+              <input class="form-control" id="num2" />
+            </div>
+            <div class="form-group">
+              <p>Số thứ ba</p>
+              <input class="form-control" id="num3" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary" id="btnSapXep">
+              Sắp xếp tăng dần
+            </button>
+            <div class="mt-2" id="hienThiTangDan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 2: Chương trình “Chào hỏi” các thành viên trong gia đình
+      </h2>
+      <div class="title mb-3">
+        <div>
+          <h3 class="text-center">Input</h3>
+          <ul>
+            <li>Người dùng là Bố, Mẹ, anh Trai, Em gái</li>
+          </ul>
+        </div>
+        <div class="process">
+          <h3 class="text-center">Process</h3>
+          <ul>
+            <li>Tạo biến name lưu lại người dùng là ai</li>
+            <li>Tạo biến output để lưu chuỗi hiển thị thông tin lời chào</li>
+            <li>
+              Xét biểu thức điều kiện if esle để xuất ra lời chào tương ứng
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-center">Output</h3>
+          <ul>
+            <li>Lời chào: "Xin chào" + Bố || Mẹ || anh Trai || Em gái</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center">
+            Chào hỏi các thành viên trong gia đình
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <p>Bạn là ai?</p>
+              <select class="form-control" id="name_family">
+                <option value="B">Bố</option>
+                <option value="M">Mẹ</option>
+                <option value="A">Anh trai</option>
+                <option value="E">Em gái</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary" id="btnXinChao">Xin chào</button>
+            <div class="mt-2" id="hienThiLoiChao"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 3: Chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn
+      </h2>
+      <div class="title mb-3">
+        <div>
+          <h3 class="text-center">Input</h3>
+          <ul>
+            <li>3 số nguyên</li>
+          </ul>
+        </div>
+        <div class="process">
+          <h3 class="text-center">Process</h3>
+          <ul>
+            <li>
+              Tạo 3 biến num1 num2 num3 lưu lại 3 số mà người dùng nhập vào
+            </li>
+            <li>
+              Tạo 2 biến soSoChan và soSoLe để đếm có bao nhiêu số chẵn và lẻ
+            </li>
+            <li>
+              Xét biểu thức điều kiện if esle để tìm số Số chẵn và số Số lẻ
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-center">Output</h3>
+          <ul>
+            <li>Số số chẵn và số số lẻ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center">
+            Hiển thị Số số chẵn và số số lẻ
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <p>Số thứ nhất</p>
+              <input class="form-control" id="number1" />
+            </div>
+            <div class="form-group">
+              <p>Số thứ 2</p>
+              <input class="form-control" id="number2" />
+            </div>
+            <div class="form-group">
+              <p>Số thứ ba</p>
+              <input class="form-control" id="number3" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary" id="btnDemChanLe">
+              Đếm số Chẵn Lẻ
+            </button>
+            <div class="mt-2" id="hienChanLe"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 4: chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là
+        tam giác gì?
+      </h2>
+      <div class="title mb-3">
+        <div>
+          <h3 class="text-center">Input</h3>
+          <ul>
+            <li>3 cạnh tam giác</li>
+          </ul>
+        </div>
+        <div class="process">
+          <h3 class="text-center">Process</h3>
+          <ul>
+            <li>
+              Tạo 3 biến canh1 canh2 canh3 lưu lại 3 số mà người dùng nhập vào
+            </li>
+            <li>
+              Xét các trường hợp để xem đó là tam giác gì bằng nhóm lệnh if else
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-center">Output</h3>
+          <ul>
+            <li>Xuất ra đó là tam giác gì</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center">
+            Xuất ra loại tam giác từ 3 cạnh cho trước
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <p>Cạnh thứ nhất</p>
+              <input class="form-control" id="canh1" />
+            </div>
+            <div class="form-group">
+              <p>Cạnh thứ 2</p>
+              <input class="form-control" id="canh2" />
+            </div>
+            <div class="form-group">
+              <p>cạnh thứ ba</p>
+              <input class="form-control" id="canh3" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary" id="btnXacDinhTamGiac">
+              Xuất ra tên tam giác
+            </button>
+            <div class="mt-2" id="hienTenTamGiac"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
